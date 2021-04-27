@@ -10,12 +10,4 @@ def encontra_el_numero():
             print ("el numero es muy alto")
         else: 
             return ("adivino el numero, felicidades!!!!")
-            
-    
-            
-                
-
-
-
-
 print(encontra_el_numero())
