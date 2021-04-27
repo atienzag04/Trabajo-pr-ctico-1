@@ -1,7 +1,7 @@
 import random
 
 def encontra_el_numero():
-    numero = (random.randrange(1, 20))
+    numero = (random.randrange(1, 21))
     while numero < 20:
         numero_a_adivinar = int(input("ingrese el numero: "))
         if numero_a_adivinar < numero:
