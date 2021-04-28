@@ -1,7 +1,12 @@
+'''Decimo punto'''
+
 import random
 
 def encontra_el_numero():
+    #Calculo el numero random
     numero = (random.randrange(1, 21))
+    #Utilizo el while, para saber si el numero es mayor o menor 
+    #al numero correcto
     while numero < 20:
         numero_a_adivinar = int(input("ingrese el numero: "))
         if numero_a_adivinar < numero:
@@ -10,4 +15,3 @@ def encontra_el_numero():
             print ("el numero es muy alto")
         else: 
             return ("adivino el numero, felicidades!!!!")
-print(encontra_el_numero())
