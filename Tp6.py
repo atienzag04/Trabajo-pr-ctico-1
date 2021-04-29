@@ -1,6 +1,6 @@
 '''Sexto punto'''
-print ("Calculo el maximo producto")
 def mayor_producto_de_cuatro (n1, n2, n3, n4):
+    """Calculo el maximo producto de cuatro numeros dados"""
     #Creo las variables a utilizar
     m1 = n1 * n2
     m2 = n1 * n3
