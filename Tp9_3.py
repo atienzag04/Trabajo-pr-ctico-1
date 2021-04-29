@@ -2,6 +2,7 @@
 '''Tercera parte'''
 
 def sacar_la_contraseña():
+    """Programa para descubrir la contraseña, utilizando una variable bool"""
     #Ingreso cual es la contraseña
     contasena = "admin"
     contrasena_de_usuario = (input("ingrese la contraseña: "))
@@ -16,3 +17,4 @@ def sacar_la_contraseña():
         return "felicidades, ingreso la conraseña correcta"
     elif correcto == False:
         return "no esta ingresando la contraseña correcta "
+print(sacar_la_contraseña())
