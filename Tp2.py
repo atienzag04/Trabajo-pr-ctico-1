@@ -1,7 +1,10 @@
+'''Segundo punto'''
+
 from math import pi
 from math import sqrt
 
 def perimetro_rectangulo ():
+    """Calculo el perimetro de un rectangulo"""
     #Pido las medidas del rectangulo
     base = int(input("Ingrese la base: "))
     altura = int(input("Ingresa la altura: "))
@@ -10,6 +13,7 @@ def perimetro_rectangulo ():
     return  calculo_perimetro
 
 def area_rectangulo ():
+    """Calculo el area de un rectangulo"""
     #Pido las medidas del rectangulo
     base = int(input("Ingrese la base: "))
     altura = int(input("Ingresa la altura: "))
@@ -18,6 +22,7 @@ def area_rectangulo ():
     return calculo_area
 
 def area_rectangulo_en_cordenadas ():
+    """Calculo el area de un rectangulo en cordenadas"""
     #Pido las medidas del rectangulo
     x1 = int(input("Ingrese la primera cordenada en x: ")) 
     x2 = int(input("Ingrese la segunda cordenada en x: "))
@@ -29,6 +34,7 @@ def area_rectangulo_en_cordenadas ():
     return calculo_area_cordenadas
 
 def perimetro_circulo ():
+    """Calculo el perimetro de un circulo"""
     #Pido el radio del circulo
     radio = int(input("Ingrese el radio del circulo: "))
     #Calculo el perimetro del circulo
@@ -36,6 +42,7 @@ def perimetro_circulo ():
     return calculo_perimetro_circulo
 
 def area_circulo ():
+    """Calculo el area de un circulo"""
     #Pido el radio del circulo
     radio = int(input("Ingrese el radio del circulo: "))
     calculo_area_circulo = (pi * radio **2) 
@@ -43,12 +50,15 @@ def area_circulo ():
     return calculo_area_circulo
 
 def volumen_esfera ():
+    """Calculo el volumen de una esfera"""
     #Pido el radio de la esfera
     radio = int(input("Ingrese el radio de la esfera: "))
     calculo_volumen_esfera = ((4/3) * pi * radio **3)
     return calculo_volumen_esfera
 
 def hipotenusa_de_triangulo_rectangulo ():
+    """Calculo la hipotenusa de un triangulo rectangulo, 
+    usando los catetos"""
     #Pido los catetos
     cateto1 = int(input("Ingrese el primer cateto: "))
     cateto2 = int(input("Ingrese el segundo cateto: "))
