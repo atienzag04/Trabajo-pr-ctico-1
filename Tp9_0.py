@@ -2,6 +2,7 @@
 '''Parte 0'''
 
 def sacar_la_contraseña():
+    """Programa para descubrir la contraseña"""
     #Ingreso cual es la contraseña
     contasena = "admin"
     contrasena_de_usuario = (input("ingrese la contraseña: "))
