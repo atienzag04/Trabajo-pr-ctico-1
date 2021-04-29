@@ -7,4 +7,3 @@ def fahrenheit_a_celsius():
     celsius = (grados_fahrenheit - 32) * (5/9)
     #Muestro el resultado
     return celsius
-print (fahrenheit_a_celsius())
