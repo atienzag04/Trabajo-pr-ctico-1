@@ -1,6 +1,6 @@
 '''Quinta punto'''
-print("Tabla de comparacion farenheit-celsius")
 def defahacel():
+    """Tabla de comparacion farenheit-celsius"""
     #Creo las listas
     farenheit = []
     celsius = []
