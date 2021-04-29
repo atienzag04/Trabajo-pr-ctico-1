@@ -10,3 +10,4 @@ def palabras_con_a():
     if cadena[0] in ["A", "a"]:
       resultado += palabra[i] + " "
   return resultado
+ 
