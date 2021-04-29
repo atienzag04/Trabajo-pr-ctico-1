@@ -1,11 +1,12 @@
-bisiesto = bool
-bisiesto = False
-
-def fecha_erronea (dia, mes, anio):
+'''Séptima parte'''
+'''Tercera actividad'''
+def validar_fecha():
+    """Se verifica si una fecha puede ser valida"""
+    anio = int(input ("Ingrese el año a utilizar: "))
+    mes = input ("Ingrese el mes: ")
+    dia = int(input ("Ingrese el día: "))
     if anio % 4 == 0:
-
         if anio % 100 == 0:
-
             if anio % 400 == 0:
                 bisiesto = True
             else:
@@ -14,13 +15,14 @@ def fecha_erronea (dia, mes, anio):
             bisiesto = True
     else:
         bisiesto = False
-        
-    if mes.lower() in ("enero", "marzo", "mayo", "julio", "agosto", "octubre", "diciembre"):
-        return "31"
-    elif mes.lower() == "febrero":
-        return "28/29"
-    elif mes.lower() in ("abril", "junio", "septiembre", "noviembre"):
-        return "30"
+    if mes.lower() in ("enero","marzo","mayo","julio","agosto","octubre","diciembre") and dia <= 31 and dia > 0:
+        fecha_correcta = True
+    elif mes.lower() in ("abril","junio","septiembre","noviembre") and dia <= 30 and dia > 0:
+        fecha_correcta = True
+    elif bisiesto == False and mes.lower() in ("febrero") and dia <= 28 and dia > 0:
+        fecha_correcta = True
+    elif bisiesto == True and mes.lower() in ("febrero") and dia <= 29 and dia > 0:
+        fecha_correcta = True
     else:
-        return "No ingreso un mes"
-    
+        fecha_correcta = False
+    return fecha_correcta
