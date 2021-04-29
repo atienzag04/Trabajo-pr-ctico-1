@@ -1,13 +1,14 @@
 '''Decimo segundo punto'''
 
 def contar_vocales():
+    """Contar la cada vez que aparece cada vocal en una frase"""
     #Creo las variables para contar las variables
     contador_a = 0
     contador_e = 0
     contador_i = 0
     contador_o = 0
     contador_u = 0
-    total=0
+    total = 0
     palabra = str(input("Ingrese la palabra a la que desea contar las vocales: "))
     for letra in palabra:
         #Busco las letras en las palabras, y las sumo en su contador
@@ -23,3 +24,4 @@ def contar_vocales():
             contador_u += 1
 
     return contador_a, contador_e, contador_i, contador_o, contador_u
+print(contar_vocales())
