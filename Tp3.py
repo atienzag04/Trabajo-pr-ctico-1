@@ -1,6 +1,6 @@
 '''Tercer punto'''
-print ("Calcular el factorial de un numero")
 def factorial (n):
+    """Calcular el factorial de un numero"""
     #Creo la lista a usar
     numeros_primos = []  
     #Creo un loop, para que divida por todos los numeros hasta llegar a n
