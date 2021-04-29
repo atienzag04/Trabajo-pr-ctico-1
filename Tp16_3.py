@@ -1,9 +1,13 @@
+"""Decimo sexto punto"""
+"""Tercera parte"""
 def remplazar_vocal_por_la_siguiente():
-    cadena=input("ingese una cadena: ")       
-    largo=len(cadena)                                    
-    inicio=0                                                   
-    cadena_final=""                                                    
-    caracter=""                                              
+    """Se cambian las vocales, por la siguiente
+    Ej: vacunas pasa a ser vecanes"""
+    cadena = input("Ingese una cadena: ")       
+    largo = len(cadena)                                    
+    inicio = 0                                                   
+    cadena_final = ""                                                    
+    caracter = ""                                              
     while inicio < largo:                               
         if cadena[inicio] in "a":                     
             caracter="e"                                
@@ -20,4 +24,3 @@ def remplazar_vocal_por_la_siguiente():
         cadena_final+= caracter                                 
         inicio+=1                                       
     return cadena_final                                      
-print (remplazar_vocal_por_la_siguiente())
