@@ -8,7 +8,7 @@ def contar_vocales():
     contador_i = 0
     contador_o = 0
     contador_u = 0
-    total = 0
+    total=0
     palabra = str(input("Ingrese la palabra a la que desea contar las vocales: "))
     for letra in palabra:
         #Busco las letras en las palabras, y las sumo en su contador
@@ -24,4 +24,3 @@ def contar_vocales():
             contador_u += 1
 
     return contador_a, contador_e, contador_i, contador_o, contador_u
-print(contar_vocales())
