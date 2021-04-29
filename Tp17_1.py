@@ -1,4 +1,9 @@
+"""Decimo septimo punto"""
+"""Primera parte"""
 def procesamiento_de_telegramas():
+    """Se acortan las palabras de 5 letras, ademas de agregarles
+    el @ al final. A todas las palabras ingresadas se les cuenta
+    el precio"""
     palabra_lista = []
     valor_palabra = 0
     resultado = ' '
@@ -13,4 +18,3 @@ def procesamiento_de_telegramas():
             valor_palabra = valor_palabra + 0.35 
             resultado += palabra_lista[i] + " "
     return resultado, valor_palabra
-print(procesamiento_de_telegramas())
