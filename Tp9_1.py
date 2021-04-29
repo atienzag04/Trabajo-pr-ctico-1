@@ -2,6 +2,8 @@
 '''Primera parte'''
 
 def sacar_la_contraseña():
+    """Programa para descubrir la contraseña, utilizando 5 intentos
+    para limitar las veces que el usario puede usar el programa"""
     #Ingreso cual es la contraseña
     contasena = "admin"
     intentos = 5
@@ -16,4 +18,3 @@ def sacar_la_contraseña():
             intentos = intentos -1
             if intentos == 0:
                 return ("No tiene mas intentos")
-        
