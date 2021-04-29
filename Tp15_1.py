@@ -1,5 +1,5 @@
 """Decimo quinto punto"""
-
+"""Primera parte"""
 def primer_letra_por_palabra():
     """Muestra las palaras iniciales de la frase a ingresar"""
     palabras = str(input("Ingrese la frase que desea mostrar las iniciales: "))
